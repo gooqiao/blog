@@ -1,0 +1,458 @@
+<style>
+    .article__content {
+        display: flex;
+    }
+
+    .right div {
+        width: 30%;
+    }
+
+    .right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .article__content code {
+        background-color: rgb(243, 243, 243);
+        color: rgb(33, 33, 33);
+        margin-left: 2px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 3px;
+        border: solid 1px #ccc;
+        border-bottom-color: #bbb;
+        box-shadow: inset 0 -1px 0 #bbb;
+        font-family: monospace;
+        font-size: 11px;
+    }
+
+    tr td:first-child {
+        white-space: nowrap;
+    }
+</style>
+
+<div class="article fmt article__content" data-id="1190000004208306" data-license="cc">
+    <div class="left">
+        <div>
+            <h2 id="articleHeader0">页面导航</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th align="left">Command</th>
+                        <th align="left">Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="left">
+                            <code>,</code>,
+                            <code>&lt;c-e&gt;</code>
+                        </td>
+                        <td align="left">向下滚动</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>k</code>,
+                            <code>&lt;c-y&gt;</code>
+                        </td>
+                        <td align="left">向上滚动</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>h</code>
+                        </td>
+                        <td align="left">向左滚动</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>l</code>
+                        </td>
+                        <td align="left">向右滚动</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>gg</code>
+                        </td>
+                        <td align="left">滚动到页面顶部</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>G</code>
+                        </td>
+                        <td align="left">滚动到页面底部</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>zH</code>
+                        </td>
+                        <td align="left">滚动到页面最左边</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>zL</code>
+                        </td>
+                        <td align="left">滚动到页面最右边</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>d</code>
+                        </td>
+                        <td align="left">向下滚动（相当于
+                            <code>PageDown</code> 键）</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>u</code>
+                        </td>
+                        <td align="left">向上滚动（相当于
+                            <code>PageUp</code> 键）</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>r</code>
+                        </td>
+                        <td align="left">重载页面</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>gs</code>
+                        </td>
+                        <td align="left">查看页面源代码</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>yy</code>
+                        </td>
+                        <td align="left">复制当前 URL 到剪贴板</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>yf</code>
+                        </td>
+                        <td align="left">复制一个 URL 链接到剪贴板</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>p</code>
+                        </td>
+                        <td align="left">打开剪贴板中的 URL 到当前标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>P</code>
+                        </td>
+                        <td align="left">打开剪贴板中的 URL 到新标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>gu</code>
+                        </td>
+                        <td align="left">跳转到当前 URL 的上一层</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>gU</code>
+                        </td>
+                        <td align="left">跳转到当前 URL 的最高层</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>i</code>
+                        </td>
+                        <td align="left">进入插入模式</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>v</code>
+                        </td>
+                        <td align="left">Enter visual mode (beta feature) (enterVisualMode)</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>V</code>
+                        </td>
+                        <td align="left">Enter visual line mode (beta feature) (enterVisualLineMode)</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>gi</code>
+                        </td>
+                        <td align="left">焦点第一个文本输入框。使用
+                            <code>tab</code> 可以在文本输入框之间循环跳转</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>f</code>
+                        </td>
+                        <td align="left">在当前标签页中打开一个链接</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>F</code>
+                        </td>
+                        <td align="left">在新标签页中打开一个链接</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>&lt;a-f&gt;</code>
+                        </td>
+                        <td align="left">在新标签页中打开多个链接</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>[[</code>
+                        </td>
+                        <td align="left">Follow the link labeled previous or &lt; (goPrevious)</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>]]</code>
+                        </td>
+                        <td align="left">Follow the link labeled next or &gt; (goNext)</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>gf</code>
+                        </td>
+                        <td align="left">Cycle forward to the next frame on the page (nextFrame)</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>gF</code>
+                        </td>
+                        <td align="left">Select the tab's main/top frame (mainFrame)</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>m</code>
+                        </td>
+                        <td align="left">创建新标记</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="right">
+        <div>
+            <h2 id="articleHeader1">使用 Vomnibar</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th align="left">Command</th>
+                        <th align="left">Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="left">
+                            <code>o</code>
+                        </td>
+                        <td align="left">打开 URl、书签或历史记录</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>O</code>
+                        </td>
+                        <td align="left">在新标签页中打开 URl、书签或历史记录</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>T</code>
+                        </td>
+                        <td align="left">搜索已打开的标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>b</code>
+                        </td>
+                        <td align="left">打开书签</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>B</code>
+                        </td>
+                        <td align="left">在新窗口中打开书签</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>ge</code>
+                        </td>
+                        <td align="left">编辑当前 URL</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>gE</code>
+                        </td>
+                        <td align="left">编辑当前 URL 并在新标签页中打开</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2 id="articleHeader2">使用查询</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th align="left">Command</th>
+                        <th align="left">Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="left">
+                            <code>/</code>
+                        </td>
+                        <td align="left">进入查询模式</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>n</code>
+                        </td>
+                        <td align="left">下一个已查询到的值（页面内循环查找）</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>N</code>
+                        </td>
+                        <td align="left">上一个已查询到的值（页面内循环查找）</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2 id="articleHeader3">导航历史</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th align="left">Command</th>
+                        <th align="left">Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="left">
+                            <code>H</code>
+                        </td>
+                        <td align="left">根据浏览历史后退一页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>L</code>
+                        </td>
+                        <td align="left">根据浏览历史前进一页</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2 id="articleHeader4">标签操纵</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th align="left">Command</th>
+                        <th align="left">Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="left">
+                            <code>K</code>,
+                            <code>gt</code>
+                        </td>
+                        <td align="left">向右移动一个标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>J</code>,
+                            <code>gT</code>
+                        </td>
+                        <td align="left">向左移动一个标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>g0</code>
+                        </td>
+                        <td align="left">移动到第一个标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>g$</code>
+                        </td>
+                        <td align="left">移动到最后一个标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>t</code>
+                        </td>
+                        <td align="left">创建一个新标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>yt</code>
+                        </td>
+                        <td align="left">复制当前标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>x</code>
+                        </td>
+                        <td align="left">关闭当前标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>X</code>
+                        </td>
+                        <td align="left">恢复已关闭的标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>W</code>
+                        </td>
+                        <td align="left">将标签页移动到新窗口</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>&lt;a-p&gt;</code>
+                        </td>
+                        <td align="left">固定/取消固定当前标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>&lt;&lt;</code>
+                        </td>
+                        <td align="left">向左移动标签页</td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <code>&gt;&gt;</code>
+                        </td>
+                        <td align="left">向右移动标签页</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2 id="articleHeader5">其他</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th align="left">Command</th>
+                        <th align="left">Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="left">
+                            <code>?</code>
+                        </td>
+                        <td align="left">显示帮助</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
