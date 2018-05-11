@@ -1,0 +1,76 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>css垂直居中</title>
+    <style type="text/css">
+        .red{
+            background-color: red;
+            
+        }
+        /* 1.定宽高,absolute定位,left/top/right/bottom:0,margin:auto */
+        /* .centener{
+            position: absolute;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        } */
+
+        /* 2.定宽高,absolute定位 */
+        /* .centener{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 50%;
+            top: 50%;
+            margin-top: -100px;
+            margin-left: -100px;
+        } */
+
+        /* 3.不定宽高,transform移动 */
+        /* .centener{
+            width: 200px;
+            height: 200px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%)
+        } */
+
+        /* 4.line-height=height */
+        /* 省略 */
+
+        /* 5.不定宽高,flex布局, 设置align-items和justify-content为center*/
+        .box{
+            width: 600px;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: palegreen;
+        }
+        .box .centener{
+            width: 200px;
+            height: 200px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class=" box">
+        <div class="centener red">
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>
