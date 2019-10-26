@@ -26,3 +26,10 @@
     // 改变内部属性时：oldVal === newVal永远为true。因为指向还是自身。
     // 改变自身时：oldVal === newVal永远为false。因为自身被重新赋值。
 // so.不要寄托于在watch回调里判断新值和旧值是否相等。相等只能说明改变的是内部属性，其它情况都是不相等。
+
+
+
+// 重新赋值：不管新值与旧值是否相同，一定触发。且newVal !== oldVal。但是oldVal里保存了旧值。
+// 改变内部属性：仅在设置了deep属性才有效。此时newVal === oldVal一定为true。因为指向相同，newVal和oldVal都指向修改后的值。
+// 总结：重新赋值后，不管原值和旧值是否相同，指向都发生了改变，所以触发watch。启用deep后，实际上是为每一个属性都设置了watch，属性触发了watch就会触发外层的watch。属性触发watch的机制视属性是否是引用类型决定。
+// 其实在触发watch前，vue都做了newVal === oldVal的比较，不想等才调用watch回调。启用deep后，内部属性改变时，判断内部属性watch的newVal === oldVal，不想等就触发内部watch，然后一定触发外部watch，尽管此时newVal === oldVal。
