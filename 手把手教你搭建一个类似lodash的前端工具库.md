@@ -123,3 +123,5 @@ tip: 注意上面的文件名, test 我们写成 xxx.test.ts 的形式
 再次运行测试, OK, 测试代码成功运行, 测试通过.
 
 一个完整且漂亮的 js 工具库就这样搭建成功了, 支持 ts, 支持单元测试
+
+github 地址: <https://github.com/gooqiao/jtools>
