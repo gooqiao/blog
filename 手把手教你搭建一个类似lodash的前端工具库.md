@@ -125,3 +125,31 @@ tip: 注意上面的文件名, test 我们写成 xxx.test.ts 的形式
 一个完整且漂亮的 js 工具库就这样搭建成功了, 支持 ts, 支持单元测试
 
 github 地址: <https://github.com/gooqiao/jtools>
+
+### 按需加载
+
+tip: 以下假设你的 package name 是 jtools, 如果不是, 替换成你的.
+
+- 首先安装 babel-plugin-component
+
+  `npm i babel-plugin-component -D`
+
+- 配置 babel
+
+  在`.babelrc`文件中写入
+
+  ```js
+  {
+    "plugins": [["component", {
+      libraryName: "jtools",
+      style: false,
+      libDir: "lib",
+      camel2Dash: false,
+    }]]
+  }
+  ```
+
+- 业务项目中
+
+  `import { log } from 'jtools'`  
+  这样就只会引入用到的 log, 其它代码在打包时都不会被引入
